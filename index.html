@@ -1,17 +1,83 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="UTF-8">
-  <title>登入界面</title>
-  <link rel="stylesheet" href="interface.css">
-  </head>
-  <body>
-   <div id="box">
-   <h1>Login</h1>
-   <div><img src="zz.png" width="20" height="20"/><input type="text" placeholder="Username"/></div>
-   <div><img src="m.png" width="20" height="20" onclick="qw()" id="img"/><input type="password" placeholder="Password" id="input"/></div>
-     <div><h3>Login</h3></div>
-   </div>
-   <script src="login.js"></script>
- </body>
- </html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="./Index.css">
+
+</head>
+
+<body>
+    <div id="box"></div>
+
+    <textarea name="" id="txt" cols="30" rows="10" style="display: none;">
+        [00:00.00]作曲 : Teddy/24
+        [00:00.20]作词 : Teddy
+        [00:00.30]천진난만 청순가련
+        [00:01.60]천진난만 청순가련
+        [00:02.50]새침한 척 이젠 지쳐 나
+        [00:06.96]귀찮아
+        [00:12.14]매일 뭐 해 어디야 밥은 잘 자
+        [00:17.68]Baby 자기 여보 보고 싶어
+        [00:26.13]다 부질없어
+        [00:31.43]You got me like
+        [00:36.93]이건 아무 감동 없는 love story
+        [00:42.53]어떤 설렘도 어떤 의미도
+        [00:44.91]네겐 미안하지만 I'm not sorry
+        [00:48.67]오늘부터 난 난 난
+        [00:51.15]빛이 나는 솔로
+        [00:53.80]빛이 나는 솔로
+        [00:58.54]I'm going solo lo lo lo lo lo
+        [01:01.28]I'm going solo lo lo lo lo lo
+        [01:04.11]Used to be your girl
+        [01:07.04]Now I'm used to being the goat
+        [01:09.64]You're sittin' on your feelings
+        [01:12.59]I'm sittin' on my throne
+        [01:15.65]I ain't got no time for the troubles in your eyes
+        [01:21.30]This time I'm only lookin' at me myself and I
+        [01:37.93]I'm goin' solo
+        [01:43.16]I'ma do it on my own now
+        [01:48.78]Now that you're alone got you lookin' for a clone now
+        [01:51.81]So low that's how I'm gettin' down
+        [01:54.24]Destined for this and the crown
+        [02:00.37]Sing it loud like
+        [02:02.81]이건 아무 감동 없는 love story
+        [02:05.58]어떤 설렘도 어떤 의미도
+        [02:10.66]네겐 미안하지만 I'm not sorry
+        [02:13.12]오늘부터 난 난 난
+        [02:15.92]빛이 나는 솔로
+        [02:17.31]빛이 나는 솔로
+        [02:21.41]I'm going solo lo lo lo lo lo
+        [02:24.67]I'm going solo lo lo lo lo lo
+        [02:27.48]만남 설렘 감동 뒤엔
+        [02:33.17]이별 눈물 후회 그리움
+        [02:41.76]홀로인 게 좋아 난 나다워야 하니까
+        [02:46.96]자유로운 바람처럼
+        [02:52.37]구름 위에 별들처럼
+        [02:58.00]멀리 가고 싶어 밝게 빛나고 싶어
+        [03:03.58]Now I'm going solo
+        [03:08.97]빛이 나는 솔로
+        [03:14.18]I'm going solo lo lo lo lo lo
+        [03:19.80]I'm going solo lo lo lo lo lo
+    </textarea>
+
+    <!-- 架子 -->
+    <article class="photo">
+        <div class="title">SOLO</div>
+        <div class="singer">JENNIE</div>
+        <div class="play"></div>
+        <div class="lrc">
+            <div class="content"></div>
+        </div>
+    </article>
+
+    <audio id="myMusic" src="./content/flac/solo.mp3">
+       您的浏览器暂不支持音频播放！！！
+    </audio>
+
+</body>
+<script src="./Index.js"></script>
+
+</html>
